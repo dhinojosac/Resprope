@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Resprope</string>
+    <string name="title_activity_ref">RefActivity</string>
+</resources>
