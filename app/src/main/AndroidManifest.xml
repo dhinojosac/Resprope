@@ -18,7 +18,8 @@
         <activity
             android:name=".RefActivity"
             android:label="@string/title_activity_ref"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.ContainerActivity"></activity>
     </application>
 
 </manifest>

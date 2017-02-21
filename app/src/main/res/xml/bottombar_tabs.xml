@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs> >
+    <tab
+        id="@+id/list"
+        title="Incidentes"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/list"
+    />
+    <tab
+        id="@+id/map"
+        title="Mapa"
+        barColorWhenSelected="@color/colorPrimary"
+        icon="@drawable/map"
+        />
+
+</tabs>
