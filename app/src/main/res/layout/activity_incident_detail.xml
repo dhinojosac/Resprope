@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dhinojosac.android.resprope.view.IncidentDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolBarDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/imageHeaderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/accidente"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/TitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Accidente Automovilistico"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Accidente ubicado en bla bla bla"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/distanceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Distnacio de 100 m"
+                android:textSize="18sp"
+                android:paddingTop="15dp"/>
+
+            <TextView
+                android:id="@+id/typeIncidentDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Vehiculos de tamaño menor"
+                android:textSize="18sp"
+                android:paddingTop="5dp"/>
+
+            <TextView
+                android:id="@+id/moreMoreDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="A eso de las 12 horas de este sábado se registró un accidente vehicular en la Ruta 5 Sur a la altura de Calera de Tango que provocó la caída de una estructura metálica con señalética. En el lugar colisionó un camión de alto tonelaje con un vehículo menor. Al impactar ambos vehículos, el automóvil de menor tamaño habría perdido el control y éste provocó la caída de una señalética de tránsito desde una estructura metálica."
+                android:textSize="18sp"
+                android:paddingTop="5dp"/>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
